@@ -16,8 +16,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 
 // Routing
-require(path.join(__dirname, '../app/routes/apiRoutes'))(app);
-require(path.join(__dirname, '../app/routes/htmlRoutes'))(app);
+require(path.join(__dirname, '../friendfinder/app/routes/apiRoutes'))(app);
+require(path.join(__dirname, '../friendfinder/app/routes/htmlRoutes'))(app);
 
 // Listen to PORT
 app.listen(PORT, function() {
