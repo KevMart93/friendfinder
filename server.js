@@ -8,7 +8,8 @@ var app = express();
 var PORT = process.env.PORT || 8080;
 
 // Access CSS files
-// app.use(express.static(path.join(__dirname, './app/pages')));
+// app.use(express.static ('app'));
+// app.use(express.static(path.join(__dirname, '/app')));
 
 // Middleware for parsing incoming requests
 app.use(bodyParser.json());
@@ -16,8 +17,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 
 // Routing
-require(path.join(__dirname, '../friendfinder/app/routes/apiRoutes'))(app);
-require(path.join(__dirname, '../friendfinder/app/routes/htmlRoutes'))(app);
+require('./app/routes/apiRoutes')(app);
+require('./app/routes/htmlRoutes')(app);
 
 // Listen to PORT
 app.listen(PORT, function() {
