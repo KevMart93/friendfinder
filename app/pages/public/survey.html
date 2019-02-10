@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Bad Influencer Survey</title>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/b38c8ed4c7.js"></script>  
+	<link rel="stylesheet" href="C:\Users\kevin\Desktop\uw-coding-bootcamp\hw-11\friendfinder\app\pages\public\style.css"/>
+</head>
+<body>
+	<div class="container page-container">
+    <header>
+        <nav>
+            <div class="nav-wrapper container text-colors">
+				<div class="row justify-content-between">
+					<div class="col-xs-4">
+						<i class="fa fa-address-book-o fa-5x" aria-hidden="true" id=logo-icon></i>
+						<a href="/" class="brand-logo text-colors" id="logo">Bad Influencer</a>
+					</div>
+					<div class="col-xs">
+						<ul class="right hide-on-med-and-down text-colors" id="head-nav-links">
+							<li><a href="/survey" class="text-colors">Survey</a></li>
+							<li><a href="/api/friends" class="text-colors">API Bad Influencers List</a></li>
+							<li><a href="https://github.com/KevMart93/friendfinder" class="text-colors">GitHub Repo</a></li>
+						</ul>
+					</div>
+				</div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+		<h2 class="headline">Bad Influencer Survey Questions</h2>
+
+		<hr>
+
+		<h3 class="headline">About You</h3>
+
+		<br>
+
+		<div class="row justify-content-between">
+
+			<div class="col-xs">
+				<h5>Name (Yes, you need to fill this out).</h5>
+				<div class="input-field">
+					<i class="material-icons prefix"></i>
+					<input type="text" class="userinput" placeholder="Your Name Here" id="userName" name="name">
+					<span class="input-group-addon">(Do this)</span>
+				</div>
+			</div>
+
+			<br>
+
+			<div class="col-xs">
+				<h5>Upload a photo of your hideous self here.</h5>
+				<div class="input-field">
+					<!-- <h5>Link to Photo Image (Required)</h5> -->
+					<i class="material-icons prefix"></i>
+					<input type="text" class="userinput" placeholder="Your Shrek Photo Here" id="userPhoto">
+					<span class="input-group-addon">(Do this too)</span>
+				</div>
+			</div>
+
+		</div>
+
+		<hr>
+
+		<!-- Survey Questions -->
+		<div class="input-survey" id="question1">
+			<h3>Question 1</h3>
+			<h5>You have been arrested, or you think that it's possible you will at some point in the future.</h5>
+			<select id="question1">
+				<option value="" disabled selected>Choose your option</option>
+				<option value="1">1 (Strongly Agree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Disagree)</option>
+			</select>
+		</div>
+
+		<br>
+		<br>
+
+		<div class="input-survey" id="question2">
+			<h3>Question 2</h3>
+			<h5>You are usually the first one out when you play "Never Have I Ever".</h5>
+			<select id="question2">
+				<option value="" disabled selected>Choose your option</option>
+				<option value="1">1 (Strongly Agree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Disagree)</option>
+			</select>
+		</div>
+
+		<br>
+		<br>
+
+		<div class="input-survey" id="question3">
+			<h3>Question 3</h3>
+			<h5>Blacking out when you drink is common.</h5>
+			<select id="question3">
+				<option value="" disabled selected>Choose your option</option>
+				<option value="1">1 (Strongly Agree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Disagree)</option>
+			</select>
+		</div>
+
+		<br>
+		<br>
+
+		<div class="input-survey" id="question4">
+			<h3>Question 4</h3>
+			<h5>You sympathize with the bad guys when you watch movies or tv shows.</h5>
+			<select id="question4">
+				<option value="" disabled selected>Choose your option</option>
+				<option value="1">1 (Strongly Agree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Disagree)</option>
+			</select>
+		</div>
+
+		<br>
+		<br>
+
+		<div class="input-survey" id="question5">
+			<h3>Question 5</h3>
+			<h5>You've heard stories about criminals almost getting away with crimes and have thought "I could have done that better and gotten away with it".</h5>
+			<select id="question5">
+				<option value="" disabled selected>Choose your option</option>
+				<option value="1">1 (Strongly Agree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Disagree)</option>
+			</select>
+		</div>
+
+		<br>
+		<br>
+
+		<div class="input-survey" id="question6">
+			<h3>Question 6</h3>
+			<h5>You have had your fair share of fun with illegal substances.</h5>
+			<select id="question6">
+				<option value="" disabled selected>Choose your option</option>
+				<option value="1">1 (Strongly Agree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Disagree)</option>
+			</select>
+		</div>
+
+		<br>
+		<br>
+
+		<div class="input-survey" id="question7">
+			<h3>Question 7</h3>
+			<h5>You're paranoid enough of your past that you didn't answer question 6 honestly.</h5>
+			<select id="question7">
+				<option value="" disabled selected>Choose your option</option>
+				<option value="1">1 (Strongly Agree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Disagree)</option>
+			</select>
+		</div>
+
+		<br>
+		<br>
+
+		<div class="input-survey" id="question8">
+			<h3>Question 8</h3>
+			<h5>You would save yourself in a dangerous situation instead of try to help others.</h5>
+			<select id="question8">
+				<option value="" disabled selected>Choose your option</option>
+				<option value="1">1 (Strongly Agree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Disagree)</option>
+			</select>
+		</div>
+
+		<br>
+		<br>
+
+		<div class="input-survey" id="question9">
+			<h3>Question 9</h3>
+			<h5>When you go out to eat, you don't leave a tip, even if you have no issues with the quality of service.</h5>
+			<select id="question9">
+				<option value="" disabled selected>Choose your option</option>
+				<option value="1">1 (Strongly Agree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Disagree)</option>
+			</select>
+		</div>
+
+		<br>
+		<br>
+
+		<div class="input-survey" id="question10">
+			<h3>Question 10</h3>
+			<h5>Money, power, and/or fame is more important to you than love and happiness.</h5>
+			<select id="question10">
+				<option value="" disabled selected>Choose your option</option>
+				<option value="1">1 (Strongly Agree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Disagree)</option>
+			</select>
+		</div>
+
+		<br>
+		<br>
+		
+		<!-- Survey Submit Button -->
+		<div>
+			<button class="btn btn-lg btn-primary waves-effect waves-light" type="submit" name="action" id="submitButton">Submit Responses
+				<i class="material-icons right"></i>
+			</button>
+		</div>
+	</div>
+
+	
+	<footer class="page-footer">
+            <div class="container text-colors">
+                <div class="row align-items-end justify-content-between">
+                    <div class="col-xs-4 text-left">
+                        <h5 class="white-text">Bad Influencer App</h5>
+						<p class="grey-text text-lighten-4">There. You did it. Don't call us asking for bail money when you and your terrible new friend get into trouble.</p>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        <h5 class="links">Links</h5>
+                        <ul>
+                            <li><a class="text-colors" href="/api/friends">API Bad Influencers List</a></li>
+                            <li><a class="repo" href="https://github.com/KevMart93/friendfinder">GitHub Repo</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+		</footer>
+		
+    
+        <div id="resultsModal" class="model modal fade" role="dialog">
+            <div class="modal-dialog">
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h3 class="modal-title">Meet your new degenerate friend and get out of here.</h3>
+					</div>
+
+					<div class="modal-body">
+						<h4>Here's the ugly mug of the worst person that fits you the best.</h4>
+						<h5 id="matchName"></h5>
+						<img id="matchImg" class="resultimg" alt="Image Not Found" src="">
+					</div>
+					
+					<div class="model-footer">
+						<a href="/survey" class="model-action model-close waves-effect waves-green btn-flat"><button type="button" class="btn btn-default" data-dismiss="model">Find more terrible friends!</button></a>
+					</div>
+
+				</div>
+            </div>
+		</div>
+	</div>
+    
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('select').material_select();
+                $('.model').model({
+                    dismissible: false, 
+                    opacity: .5, 
+                    inDuration: 300, 
+                    outDuration: 200, 
+                    startingTop: '4%', 
+                    endingTop: '10%' 
+                });
+            });
+            $('#submitButton').on('click', function(event) {
+                event.preventDefault();
+                var userInput = {
+                    name: $('#userName').val().trim(),
+                    photo: $('#userPhoto').val().trim(),
+                    scores:[
+                        $('#question1').val().trim(),
+                        $('#question2').val().trim(),
+                        $('#question3').val().trim(),
+                        $('#question4').val().trim(),
+                        $('#question5').val().trim(),
+                        $('#question6').val().trim(),
+                        $('#question7').val().trim(),
+                        $('#question8').val().trim(),
+                        $('#question9').val().trim(),
+                        $('#question10').val().trim()
+                    ]
+                };
+                // console.log('userInput = ' + JSON.stringify(userInput));
+                // Add user inputs to friends list
+                $.post('/api/friends', userInput)
+                  .done(function(data) {
+                      // console.log('response = ' + JSON.stringify(data));
+                      // Set the name and image values of friend match
+                      $('#matchName').html(data.matchName);
+                    $("#matchImg").attr("src", data.matchImage);
+                    // Pop open the modal dialog
+                      $('#resultsModel').modal('open');
+                  });
+            });
+        </script>
+    </body>
+    </html>
+    
+</body>
+</html>
